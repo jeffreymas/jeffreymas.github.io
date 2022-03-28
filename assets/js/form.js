@@ -57,6 +57,13 @@
           alert.classList.toggle('d-none');
           form.reset();
           console.log('Success!', response)
+          
+          window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                    $(this).remove(); 
+                });
+            }, 25000);
+          
         })
         .catch(error =>{
           btnLoading.classList.toggle('d-none');
@@ -66,9 +73,5 @@
        })
     })
 
-window.setTimeout(function() {
-    $(".alert").fadeTo(500, 0).slideUp(500, function(){
-        $(this).remove(); 
-    });
-}, 25000);
+
 
