@@ -1,3 +1,3 @@
-FROM HTTPS
+FROM HTTP
 
 COPY html jeffreymas\jeffreymas.github.io\blob\main\index.html
